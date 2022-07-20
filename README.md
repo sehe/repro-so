@@ -1,13 +1,7 @@
-# repro73043573
-https://stackoverflow.com/questions/73043573/boost-gzip-filter-segmentation-fault-core-dumped-error
+# reproducing items for stackoverflow
 
 ```
-docker build . -t repro73043573
-docker run --rm -it repro73043573
-```
-
-Output:
-
-```
-Segmentation fault (core dumped)
+git clone https://github.com/sehe/repro-so -b q73024824-conan repro
+docker build -t repro repro
+docker run --rm -it repro
 ```

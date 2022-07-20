@@ -4,8 +4,8 @@ project(sotest)
 SET(CMAKE_CXX_STANDARD 14)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(avro/lang/c++)
-include_directories(SYSTEM avro/lang/c++)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
 
 add_executable(sotest test.cpp)
-target_link_libraries(sotest avrocpp_s)
+target_link_libraries(sotest ${CONAN_LIBS})

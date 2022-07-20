@@ -1,11 +1,11 @@
 #include <string>
 //#include "bla.hh"
-#include "api/Compiler.hh"
-#include "api/DataFile.hh"
-#include "api/Decoder.hh"
-#include "api/Encoder.hh"
-#include "api/Generic.hh"
-#include "api/Stream.hh"
+#include "avro/Compiler.hh"
+#include "avro/DataFile.hh"
+#include "avro/Decoder.hh"
+#include "avro/Encoder.hh"
+#include "avro/Generic.hh"
+#include "avro/Stream.hh"
 
 namespace c {
     struct cpx {

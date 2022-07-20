@@ -1,0 +1,6 @@
+[requires]
+boost/1.78.0
+libavrocpp/1.11.0
+
+[generators]
+cmake
